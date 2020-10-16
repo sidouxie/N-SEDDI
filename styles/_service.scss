@@ -1,0 +1,160 @@
+
+
+.service-section{
+    width: 100%;
+    background-color: #009999;
+    color: #fff;
+
+    .barre-section{
+        width: 100%;
+        height: 120px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3{
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+    }
+
+    .service-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        height: 260px;
+        transition: 250ms ease-in;
+
+        @media screen and (max-width: 540px) {
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            height: 760px;
+            transition: 250ms ease-in-out;
+        }
+
+        .box-1{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            filter: grayscale(1);
+            background-image: url("../images/wallpaper_3-min.jpg");
+
+            &:hover{
+                filter: grayscale(0);
+            }
+
+            a{
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                z-index: 3;
+                font-size: 1.3rem; 
+                font-weight: 600;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .box-overlay{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.65);
+                z-index: 2;
+            }
+        }
+
+        .box-2{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            filter: grayscale(1);
+            background-image: url("../images/wallpaper_2-min.jpg");
+
+            &:hover{
+                filter: grayscale(0);
+            }
+
+            a{
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                z-index: 3;
+                font-size: 1.3rem; 
+                font-weight: 600;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .box-overlay2{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.65);
+                z-index: 2;
+            }
+        }
+
+        .box-3{
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            filter: grayscale(1);
+            background-image: url("../images/wallpaper_5-min.jpg");
+
+            &:hover{
+                filter: grayscale(0);
+            }
+
+            a{
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                z-index: 3;
+                font-size: 1.3rem; 
+                font-weight: 600;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            .box-overlay3{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.65);
+                z-index: 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,219 @@
+footer {
+    width: 100%;
+    height: 380px;
+    border-top: 1px solid #eaeaea;
+
+    @media screen and (max-width: 700px) {
+        height: 520px;
+    }
+  }
+
+  .bg-footer{
+      width: 100%;
+      height: 380px;
+      position: absolute;
+      background-image: url("../images/wallpaper_3-min.jpg");
+      background-position: center;
+      background-size: cover;
+      z-index: 1;
+
+      @media screen and (max-width: 700px) {
+        height: 520px;
+    }
+
+      .overlay{
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: rgba(6, 8, 13,0.98) ;
+          z-index: 2;
+      }
+
+      .container-footer{
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        display: flex;
+        bottom: 90%;
+        color: aliceblue;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2em;
+
+        @media screen and (max-width: 560px) {
+            padding: 0 1em;
+        }
+
+        .footer-top{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 3em;
+
+            .logo-section{
+                height: 130px;
+                
+                @media screen and (max-width: 560px) {
+                    height: 110px;
+                }
+            }
+
+            .link-section a{
+                color: #fff;
+                margin-right: 2em;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                font-weight: 500;
+                -webkit-align-items: center;
+                align-items: center;
+                height: 100%;
+                cursor: pointer;
+                -webkit-transition: all 250ms ease-in-out;
+                transition: all 250ms ease-in-out;
+
+                &:hover{
+                    color: #009999;
+                }
+
+                @media screen and (max-width: 560px) {
+                    font-size: 0.6rem;
+                    margin-right: 1em;
+                }
+
+            }
+        }
+
+        .footer-bot{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            @media screen and (max-width: 700px) {
+                flex-direction: column-reverse;
+            }
+
+            .droit-section{
+                
+
+                .politique-conf{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: flex-start;
+
+                    .icon-conf{
+                        width: 45px;
+                        height: 50px;
+                    }
+
+                    a{
+                        justify-self: center;
+                        align-items: center;
+                        position: relative;
+                        display: flex;
+                        font-size: 0.8rem;
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+
+            .copy-section{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                span{
+                    font-size: 0.7rem;
+                    text-transform: uppercase;
+                    margin-right: 0.5rem;
+                }
+
+                .copy-icon{
+                    font-size: 1.2rem;
+                    cursor: pointer;
+                }
+            }
+
+            .icon-section{
+                display: flex;
+                flex-direction: column;
+
+
+                @media screen and (max-width: 700px) {
+                    margin-bottom: 2em;
+                }
+
+
+                .info-1{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: flex-start;
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    align-items: center;
+
+                    .icon-info{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .info-2{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: flex-start;
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    align-items: center;
+
+                    .icon-info{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+
+                .info-3{
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: flex-start;
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    align-items: center;
+
+                    .icon-info{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+      }
+  }
+
+  a.btn-links{
+    border: 2px solid #009999;
+    border-radius: 10px;
+    padding: 0.5em !important;
+    background-color: #009999;
+
+    @media screen and (max-width: 560px) {
+        padding: 0.3em;
+    }
+
+    &:hover{
+        background-color: transparent;
+    }
+}

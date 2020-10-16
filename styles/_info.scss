@@ -1,0 +1,135 @@
+.info-section{
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #009999;
+    color: #fff;
+    transition: all 250ms ease-in-out;
+
+    @media screen and (max-width: 700px) {
+        height: 360px;
+    }
+
+
+    .info-container{
+        padding: 0 7em;
+
+        @media screen and (max-width: 540px) {
+            padding: 0 2em;
+        }
+
+
+        .section-title{
+            padding: 0;
+    
+            h2{
+                font-size: 2rem;
+                font-weight: 800;
+                padding: 0;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+
+                @media screen and (max-width: 375px) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .section-text{
+            font-size: 1rem;
+            text-align: center;
+            letter-spacing: 0.5px;
+            line-height: 1.9;
+            font-weight: 300;
+            color: #fff;
+            padding: 0 2em;
+
+            @media screen and (max-width: 375px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+}
+
+.map-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 440px;
+
+    @media screen and (max-width: 540px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 875px;
+    }
+
+    .cabinet-section{
+        grid-auto-rows: 1fr 1fr;
+        display: grid;
+        background-color: rgb(241,241,241);
+
+        .img-cabinet{
+            background-image: url("../images/entrer_ooredoo.PNG");
+            background-position: bottom;
+            background-size: cover;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+
+            @media screen and (max-width: 320px) {
+                width: 320px;
+            }
+
+            .overlay{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 153, 153,0.45);
+                z-index: 2;
+                overflow: hidden;
+            }
+        }
+
+        .section-info-text{
+            padding: 2em;
+            text-align: left;
+            text-transform: uppercase;
+
+            @media screen and (max-width: 320px) {
+                width: 320px;
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .mapping{
+            background-image: url("../images/google_map_emplacment.PNG");
+            background-position: bottom;
+            background-size: cover;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+
+            @media screen and (max-width: 320px) {
+                width: 320px;
+            }
+    }
+}
