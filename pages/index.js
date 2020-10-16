@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>N.SEDDI - Commissaire aux compte comptable agrée à Alger</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/static/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Montserrat:wght@100;300;400;600;700&display=swap" rel="stylesheet" />        
       </Head>
 
