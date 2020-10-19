@@ -9,7 +9,8 @@ export default function Home() {
 
   const data = {
     title: "N.SEDDI",
-    subtitle : "Commissaire aux compte comptable agrée"
+    subtitle: "Commissaire aux compte comptable agrée",
+    bghero: "wallpaper_bg-min.jpg"
   }
   return (
     <Layout>

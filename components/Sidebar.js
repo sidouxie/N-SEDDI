@@ -12,7 +12,7 @@ const Sidebar = ({ isopen, toggle }) => {
                 </div>
             </span>
             <div className="sidebar-wrapper">
-                    <div data-aos="fade-up" className="sidebar-menu">
+                    <div className="sidebar-menu">
                         <Link href="/"><a>Présentation</a></Link>
                         <Link href="/services"><a>Services</a></Link>
                         <Link href="/contact"><a>Contact</a></Link>

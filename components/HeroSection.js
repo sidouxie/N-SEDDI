@@ -1,10 +1,11 @@
 import React from 'react'
 
 
-const HeroSection = ({data}) => {
+const HeroSection = ({ data }) => {
     return (
         <div className="main">
             <div className="hero-container">
+                <img src={`/static/images/${data.bghero}`} alt="wallpaper hero accueil" />
                 <div className="hero-bg"></div>
             </div>
             <div className="section-title">

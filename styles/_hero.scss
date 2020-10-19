@@ -15,11 +15,15 @@
     }
 }
 
-
-.hero-container{
-    background-image: url('../images/wallpaper_bg-min.jpg');
+.hero-container img{
     background-position: center;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
+.hero-container {
     display: flex;
     justify-content: center;
     align-items: center;
