@@ -1,8 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import {FaLinkedinIn,FaInstagram} from 'react-icons/fa'
+import { FaLinkedinIn, FaInstagram } from 'react-icons/fa'
+import {animateScroll as scroll} from 'react-scroll'
 
 const Footer = () => {
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <footer>
             <div className="bg-footer">
@@ -18,7 +24,10 @@ const Footer = () => {
                                 <Link href="/"><a>Présentation</a></Link>
                                 <Link href="/services"><a>Services</a></Link>
                                 <Link href="/contact"><a className="btn-links">Contacter</a></Link>
-                        </div>
+                            </div>
+                            <div className="scroll-top">
+                            <img src="/static/icones/icone_bot.svg" alt="icon bottom" onClick={toggleHome} />
+                            </div>
                         </div>
 
                         <div className="footer-bot">
@@ -54,7 +63,6 @@ const Footer = () => {
                     
                 </div>
             </div>
-            
         </footer>
     )
 }

@@ -82,6 +82,17 @@ footer {
                 }
 
             }
+
+            .scroll-top{
+                transform: rotateZ(180deg);
+                position: relative;
+                cursor: pointer;
+                z-index: 2;
+
+                img{
+                    width: 50px;
+                }
+            }
         }
 
         .footer-bot{
